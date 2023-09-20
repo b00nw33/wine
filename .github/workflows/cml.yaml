@@ -27,5 +27,5 @@ jobs:
           echo "MODEL METRICS"
           cat metrics.txt
           # Post reports as comments in GitHub PRs
-          cat results.txt >> report.md
+          cat metrics.txt >> report.md
           cml comment create report.md
