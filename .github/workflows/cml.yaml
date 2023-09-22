@@ -30,8 +30,8 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data viz" >> report.md
-          echo "![](./features.png)" >> report.md
-          # echo "![](./residuals.png 'Residuals')" >> report.md
+          echo "![](./features.png 'Features')" >> report.md
+          echo "![](./residuals.png 'Residuals')" >> report.md
           
           # Post reports as comments in GitHub PRs
           cml comment create report.md
